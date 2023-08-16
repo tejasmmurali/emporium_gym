@@ -1,0 +1,53 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+.leftJ{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    flex: 1 1;
+
+}
+.leftJ>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--red);
+    border-radius: 20%;
+    margin: -10px;
+}
+.leftJ>div{
+    display: flex;
+    gap: 1rem;
+}
+
+.rightJ{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+}
+.email-container{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+
+::placeholder{
+    color: var(--lightgray);
+}
+.btnJ{
+    background-color: var(--red);   
+    color: white;
+}
