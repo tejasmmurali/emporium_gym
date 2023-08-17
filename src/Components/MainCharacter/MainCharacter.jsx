@@ -10,16 +10,17 @@ import {motion} from 'framer-motion'
 
 const MainCharacter = () => {
 
-    const trans = {type:'spring',duration:3}
+    const trans = {type:'spring',duration:3};
+    const mob = window.innerWidth<=768? true: false;
     return(
-        <div className='mainChar'>
+        <div className='mainChar' id='mainChar'>
             <div className='blur blurM'></div>
             <div className='mainLeft'>
                 <Header/>
 
                 <div className='ad1'>
                     <motion.div
-                    initial = {{left:'238px'}}
+                    initial = {{left: mob? "178px":"238px"}}
                     whileInView={{left:'8px'}}
                     transition={{...trans, type:'tween'}}
                     ></motion.div>

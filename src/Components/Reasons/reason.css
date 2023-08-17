@@ -83,3 +83,31 @@
 .partners>img{
     width: 2.5rem;
 }
+
+@media screen and (max-width:768px){
+    .Reasons{
+        flex-direction: column;
+
+    }
+
+    .leftR{
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+    .leftR>:nth-child(1){
+        width: 7rem;
+        height: 17rem;
+    }
+    .leftR>:nth-child(2){
+        width: 15rem;
+        height: 10rem;
+    }
+    .leftR>:nth-child(3){
+        width: 7rem;
+        height: 7rem;
+    }
+    .leftR>:nth-child(4){
+        width: 7rem;
+        height: 6rem;
+    }
+}
